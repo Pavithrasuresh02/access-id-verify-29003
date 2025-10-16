@@ -37,7 +37,7 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-border bg-card/50 backdrop-blur">
+          <Card className="border-border bg-card/50 backdrop-blur hover:bg-card/70 transition-all">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Activity className="w-6 h-6 text-primary" />
@@ -49,13 +49,15 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mb-4">
                 Track worker activities and safety compliance
               </p>
-              <Button variant="outline" className="w-full" disabled>
-                Coming Soon
-              </Button>
+              <Link to="/activity-monitoring">
+                <Button className="w-full">
+                  Go to Activity Monitor
+                </Button>
+              </Link>
             </CardContent>
           </Card>
 
-          <Card className="border-border bg-card/50 backdrop-blur">
+          <Card className="border-border bg-card/50 backdrop-blur hover:bg-card/70 transition-all">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <AlertTriangle className="w-6 h-6 text-primary" />
@@ -67,9 +69,11 @@ const Index = () => {
               <p className="text-sm text-muted-foreground mb-4">
                 Get notified of safety violations immediately
               </p>
-              <Button variant="outline" className="w-full" disabled>
-                Coming Soon
-              </Button>
+              <Link to="/safety-alerts">
+                <Button className="w-full">
+                  View Safety Alerts
+                </Button>
+              </Link>
             </CardContent>
           </Card>
         </div>

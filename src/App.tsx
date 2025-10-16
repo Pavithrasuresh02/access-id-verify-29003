@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AccessScan from "./pages/AccessScan";
+import ActivityMonitoring from "./pages/ActivityMonitoring";
+import SafetyAlerts from "./pages/SafetyAlerts";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -20,6 +22,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/access-scan" element={<AccessScan />} />
+          <Route path="/activity-monitoring" element={<ActivityMonitoring />} />
+          <Route path="/safety-alerts" element={<SafetyAlerts />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { ShieldCheck, ScanLine, LayoutDashboard } from "lucide-react";
+import { ShieldCheck, ScanLine, LayoutDashboard, Activity, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -8,6 +8,8 @@ const Navbar = () => {
   const navItems = [
     { path: "/", label: "Dashboard", icon: LayoutDashboard },
     { path: "/access-scan", label: "Access Scan", icon: ScanLine },
+    { path: "/activity-monitoring", label: "Activity", icon: Activity },
+    { path: "/safety-alerts", label: "Alerts", icon: AlertTriangle },
   ];
 
   return (
